@@ -20,9 +20,9 @@ Một ứng dụng Blog đơn giản được xây dựng bằng **Node.js** và
 
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/) (hoặc bất kỳ hệ quản trị dữ liệu nào bạn dùng)
-- [Mongoose](https://mongoosejs.com/) (nếu dùng MongoDB)
-- [EJS](https://ejs.co/) / [Pug](https://pugjs.org/) (nếu có giao diện)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/) 
+- [EJS](https://ejs.co/) / [HandleBar](https://www.npmjs.com/package/express-handlebars) 
 - [dotenv](https://www.npmjs.com/package/dotenv) để quản lý biến môi trường
 
 ---
@@ -31,11 +31,14 @@ Một ứng dụng Blog đơn giản được xây dựng bằng **Node.js** và
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/blog-express.git
+git clone git@github.com:AlexHa2/Blog_BE.git
 cd blog-express
 
 # Cài dependencies
 npm install
+
+# Cách run
+npm start
 
 # Tạo file .env nếu cần
 cp .env.example .env
