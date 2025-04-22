@@ -40,4 +40,4 @@ coverage/
 *.tgz
 
 # css files
-public/css/*
+src/public/css/
