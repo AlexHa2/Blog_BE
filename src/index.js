@@ -28,7 +28,7 @@ app.engine(
 // Chỉ định view engine là hbs
 app.set('view engine', 'hbs');
 // Thư mục chứa views (mặc định ./views, có thể đổi)
-app.set('views', 'src/resources/views');
+              app.set('views', 'src/resources/views');
 
 
 
