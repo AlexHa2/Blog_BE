@@ -1,43 +1,43 @@
 {
-  "name": "blog-app",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [
-    "blog"
-  ],
-  "license": "ISC",
-  "author": "Alex_Ha",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "husky install",
-    "start": "nodemon --inspect src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dsass": "sass --watch src/resources/sass:public/css --embed-source-map",
-    "bsass": "sass src/resources/sass:public/css --style=compressed"
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 4,
-    "singleQuote": true,
-    "printWidth": 80
-  },
-  "lint-staged": {
-    "**/*.{js,ts,jsx,tsx,json}": [
-      "prettier --write"
-    ]
-  },
-  "dependencies": {
-    "express": "^5.1.0",
-    "express-handlebars": "^8.0.1",
-    "pug": "^3.0.3"
-  },
-  "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.9",
-    "prettier": "^3.5.3",
-    "sass": "^1.87.0"
-  }
+    "name": "blog-app",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "blog"
+    ],
+    "license": "ISC",
+    "author": "Alex_Ha",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "prepare": "husky install",
+        "start": "nodemon --inspect src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dsass": "sass --watch src/resources/sass:public/css --embed-source-map",
+        "bsass": "sass src/resources/sass:public/css --style=compressed"
+    },
+    "prettier": {
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "singleQuote": true,
+        "printWidth": 80
+    },
+    "lint-staged": {
+        "**/*.{js,ts,jsx,tsx,json,scss}": [
+            "prettier --write"
+        ]
+    },
+    "dependencies": {
+        "express": "^5.1.0",
+        "express-handlebars": "^8.0.1",
+        "pug": "^3.0.3"
+    },
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.2",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.3",
+        "sass": "^1.87.0"
+    }
 }
