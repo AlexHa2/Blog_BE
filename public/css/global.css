@@ -1,5 +1,48 @@
-h1 {
-  color: green;
+/* Dark theme */
+[data-theme=dark] {
+  --bg-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --primary-color: #4da3ff;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/resources/sass/global.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI%22,%22file%22:%22global.css%22%7D */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+}
+
+h1 {
+  color: var(--text-color);
+}
+
+body {
+  background-color: #fdfdfd;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hero.is-travel {
+  background-image: url("https://source.unsplash.com/1600x500/?travel,nature");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero .title,
+.hero .subtitle {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.post-card {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.my-element {
+  animation: lightSpeedInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../src/resources/sass/themes.scss%22,%22../../src/resources/sass/variables.scss%22,%22../../src/resources/sass/global.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAEA;AACA;EACE;EACA;EACA;;;ACLF;EACE;EACA;EACA;;;ACDF;EACI;;;AAEJ;EACI;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;AAAA;EAEI;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACE;EACA%22,%22file%22:%22global.css%22%7D */

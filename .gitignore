@@ -41,3 +41,7 @@ coverage/
 
 # css files
 src/public/css/
+
+#.env files
+.env
+

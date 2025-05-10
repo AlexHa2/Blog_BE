@@ -3,9 +3,13 @@ const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const router = require('./routes/index');
+const connectDB = require('./config/db.config');
 
 const app = express();
 const port = 3000;
+
+/* ---------- Kết nối DB ---------- */
+connectDB();
 
 app.use(express.static('public')); // Thư mục chứa file tĩnh (CSS, JS, ảnh...)
 
